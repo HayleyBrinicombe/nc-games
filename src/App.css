@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  border-style:outset;
+  
 }
 
 .App-header {
@@ -9,7 +11,7 @@
 
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(52, 29, 29);
+  color: rgb(40, 34, 34);
 }
 
 .App-link {
@@ -18,7 +20,7 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: rgb(159, 72, 72);
   overflow: hidden;
 }
 
@@ -85,14 +87,14 @@
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover,
 .dropdown:hover .dropbtn {
-  background-color: #555;
+  background-color: rgb(147, 70, 70);
   color: white;
 }
 
 /* Add a grey background to dropdown links on hover */
 .dropdown-content {
   background-color: #ddd;
-  color: black;
+  color: rgb(156, 66, 66);
 }
 
 /* Show the dropdown menu when the user moves the mouse over the dropdown button */
@@ -131,15 +133,26 @@
 }
 
 h3 {
-  color: rgb(41, 59, 66);
+  color: rgb(40, 46, 49);
 }
 
 .reviewcard_img {
-  height: 100px;
-  width: 100px;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
 }
 
 p {
    color: rgb(41, 59, 66);
    font-family:sans-serif;
+   text-align: center;
+   text-decoration-color: #c7c4c4;
+   
+}
+.div {
+  color: grey;
+
+}
+.body {
+  color: grey;
 }
