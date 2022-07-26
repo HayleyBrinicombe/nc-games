@@ -11,16 +11,19 @@ import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Welcome to HB- Gaming Reviews</h1>
-      </header>
-      <NavBar />
-      <p>Take a look at our lastest reviews</p>
-      <ReviewList />
+    <BrowserRouter>
+      <div className="App">
+        <header className="App-header">
+          <h1>Welcome to HB- Gaming Reviews</h1>
+        </header>
+        <NavBar />
+        <h2>Take a look at our lastest reviews</h2>
+        <Routes>
+          <Route path="/" element={<ReviewList />} />
+          <Route path="/reviews/:category" element={<ReviewList />} />
+        </Routes>
       </div>
-      
-    
+    </BrowserRouter>
   );
 }
 

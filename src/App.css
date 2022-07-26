@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  border-style: outset;
 }
 
 .App-header {
@@ -9,7 +10,7 @@
 
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(52, 29, 29);
+  color: rgb(40, 34, 34);
 }
 
 .App-link {
@@ -18,7 +19,7 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: rgb(159, 72, 72);
   overflow: hidden;
 }
 
@@ -65,11 +66,13 @@
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
+  position:static;
+  background-color: #d7cfcf;
+  min-width: 60px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+
+  max-width: 60px;
 }
 
 /* Style the links inside the dropdown */
@@ -85,14 +88,14 @@
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover,
 .dropdown:hover .dropbtn {
-  background-color: #555;
+  background-color: rgb(147, 70, 70);
   color: white;
 }
 
 /* Add a grey background to dropdown links on hover */
 .dropdown-content {
   background-color: #ddd;
-  color: black;
+  color: rgb(156, 66, 66);
 }
 
 /* Show the dropdown menu when the user moves the mouse over the dropdown button */
@@ -103,14 +106,14 @@
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 60px) {
   .topnav.responsive {
     position: relative;
   }
   .topnav.responsive a.icon {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 1;
+    top: 1;
   }
   .topnav.responsive a {
     float: none;
@@ -131,15 +134,32 @@
 }
 
 h3 {
-  color: rgb(41, 59, 66);
+  color: rgb(40, 46, 49);
 }
 
 .reviewcard_img {
-  height: 100px;
-  width: 100px;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
 }
 
 p {
-   color: rgb(41, 59, 66);
-   font-family:sans-serif;
+  color: rgb(41, 59, 66);
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+
+  text-align: center;
+  text-decoration-color: #c7c4c4;
+}
+.div {
+  color: grey;
+}
+.body {
+  color: grey;
+}
+.review-border {
+  border-radius: 10px;
+  border: 3px solid rgb(132, 66, 66);
+  text-decoration: double;
 }

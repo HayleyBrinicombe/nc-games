@@ -1,20 +1,33 @@
+import { Link } from "react-router-dom";
+
 export default function NavBar() {
   return (
     <div className="topnav" id="myTopnav">
-    <div>
-          <a href="./" className="active">
-        Home
-      </a>
-      <a href="./users">Change User</a>
-      <a href="./categories">Categories</a>
-      </div>
-      <div className="dropdown">
-        <button className="dropbtn"></button>
-        <div className="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
+      <div>
+        <Link to="/" className="navigation_link">
+          All Reviews
+        </Link>
+        <Link to="/reviews/strategy" className="navigation_link">
+          Strategy Reviews
+        </Link>
+        <Link to="/reviews/hidden-roles" className="navigation_link">
+          Hidden Roles Reviews
+        </Link>
+        <Link to="/reviews/dexterity" className="navigation_link">
+          Dexterity Reviews
+        </Link>
+        <Link to="/reviews/push-your-luck" className="navigation_link">
+          Push your luck Reviews
+        </Link>
+        <Link to="/reviews/roll-and-write" className="navigation_link">
+          Roll and write Reviews
+        </Link>
+        <Link to="/reviews/deck-building" className="navigation_link">
+          Deck building Reviews
+        </Link>
+        <Link to="/reviews/engine-building" className="navigation_link">
+          Engine building Reviews
+        </Link>
       </div>
     </div>
   );

@@ -1,22 +1,29 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import ReviewCard from "./ReviewCard";
+import { useParams } from "react-router-dom";
 
 export default function ReviewList() {
   const [reviews, setReviews] = useState([]);
 
-  useEffect(() => {
-    axios.get(`https://hb-games.herokuapp.com/api/reviews`).then((res) => {
-      setReviews(res.data.reviews);
-    });
-  }, []);
-console.log(reviews)
+  const { category } = useParams();
 
+  useEffect(() => {
+    axios
+      .get(`https://hb-games.herokuapp.com/api/reviews`, {
+        params: {
+          category: category
+        }
+      })
+      .then((res) => {
+        setReviews(res.data.reviews);
+      });
+  }, [category]);
 
   return (
     <div>
       {reviews.map((review) => {
-        return <ReviewCard review={review}></ReviewCard>
+        return <ReviewCard review={review}></ReviewCard>;
       })}
     </div>
   );
