@@ -1,7 +1,6 @@
 .App {
   text-align: center;
-  border-style:outset;
-  
+  border-style: outset;
 }
 
 .App-header {
@@ -67,11 +66,13 @@
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
+  position:static;
+  background-color: #d7cfcf;
+  min-width: 60px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+
+  max-width: 60px;
 }
 
 /* Style the links inside the dropdown */
@@ -105,14 +106,14 @@
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 60px) {
   .topnav.responsive {
     position: relative;
   }
   .topnav.responsive a.icon {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 1;
+    top: 1;
   }
   .topnav.responsive a {
     float: none;
@@ -143,16 +144,22 @@ h3 {
 }
 
 p {
-   color: rgb(41, 59, 66);
-   font-family:sans-serif;
-   text-align: center;
-   text-decoration-color: #c7c4c4;
-   
+  color: rgb(41, 59, 66);
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+
+  text-align: center;
+  text-decoration-color: #c7c4c4;
 }
 .div {
   color: grey;
-
 }
 .body {
   color: grey;
+}
+.review-border {
+  border-radius: 10px;
+  border: 3px solid rgb(132, 66, 66);
+  text-decoration: double;
 }
