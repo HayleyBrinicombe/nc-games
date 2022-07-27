@@ -23,7 +23,7 @@ export default function ReviewList() {
   return (
     <div>
       {reviews.map((review) => {
-        return <ReviewCard review={review}></ReviewCard>;
+        return <ReviewCard key={review.review_id} review={review}></ReviewCard>;
       })}
     </div>
   );
