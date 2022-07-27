@@ -7,6 +7,8 @@ import { useState } from "react";
 import ReviewList from "./components/ReviewList";
 import NavBar from "./components/NavBar";
 
+import GetSingleReview from "./components/GetSingleReview";
+
 //USER CONTENT
 
 function App() {
@@ -17,10 +19,11 @@ function App() {
           <h1>Welcome to HB- Gaming Reviews</h1>
         </header>
         <NavBar />
-        <h2>Take a look at our lastest reviews</h2>
+        <h3>Keep us updated with your gaming thoughts ;)</h3>
         <Routes>
           <Route path="/" element={<ReviewList />} />
           <Route path="/reviews/:category" element={<ReviewList />} />
+          <Route path="/review/:review_id" element={<GetSingleReview />} />
         </Routes>
       </div>
     </BrowserRouter>
