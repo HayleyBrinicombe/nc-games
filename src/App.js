@@ -19,7 +19,7 @@ function App() {
           <h1>Welcome to HB- Gaming Reviews</h1>
         </header>
         <NavBar />
-        <h2></h2>
+        <h3>Keep us updated with your gaming thoughts ;)</h3>
         <Routes>
           <Route path="/" element={<ReviewList />} />
           <Route path="/reviews/:category" element={<ReviewList />} />

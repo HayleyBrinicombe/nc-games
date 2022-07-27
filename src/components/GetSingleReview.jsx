@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import SingleReview from "./SingleReview";
+
 import { useParams } from "react-router-dom";
 
 export default function GetSingleReview() {
@@ -12,7 +12,6 @@ export default function GetSingleReview() {
     axios
       .get(`https://hb-games.herokuapp.com/api/reviews/${review_id}`)
       .then((res) => {
-        console.log(res.data.review);
         setSingleReview(res.data.review);
       });
   }, [review_id]);
@@ -22,7 +21,7 @@ export default function GetSingleReview() {
       <h2></h2>
       <h2 className="user_review">{SingleReview.owner}</h2>
       <h3>{SingleReview.title}</h3>
-      <h6>Review ID {SingleReview.review_id}</h6>
+
       <h5> Votes {SingleReview.votes}</h5>
 
       <img
@@ -35,4 +34,3 @@ export default function GetSingleReview() {
     </div>
   );
 }
-

@@ -12,9 +12,11 @@ export default function ReviewCard({ review }) {
         alt="review_img"
       ></img>
       <h5>{review.category}</h5>
-      <Link to={`/review/${review.review_id}`} className="navigation_link">
-        Read more
-      </Link>
+      <button>
+        <Link to={`/review/${review.review_id}`} className="navigation_link">
+          Read more
+        </Link>
+      </button>
     </div>
   );
 }
