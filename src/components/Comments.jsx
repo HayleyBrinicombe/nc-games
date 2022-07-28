@@ -18,13 +18,13 @@ const Comments = ({ review_id }) => {
     <ul>
       {commentsList.map((comment) => {
         return (
-          <h4 key={comment.comment_id}>
-            <h3>User: {comment.author}</h3>
-            <h4>created:  {comment.created_at}</h4>
-            <p>Votes: {comment.votes}</p>
+          <div key={comment.comment_id}>
+            <h5>User: {comment.author}</h5>
+            <h6>created:  {comment.created_at}</h6>
+            <h6>Votes: {comment.votes}</h6>
 
-            <p>{comment.body}</p>
-          </h4>
+            <h6>{comment.body}</h6>
+          </div>
         );
       })}
     </ul>
