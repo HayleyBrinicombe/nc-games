@@ -6,7 +6,7 @@ import { useState } from "react";
 //COMPONENTS
 import ReviewList from "./components/ReviewList";
 import NavBar from "./components/NavBar";
-
+import Votes from "./components/Votes"
 import GetSingleReview from "./components/GetSingleReview";
 
 //USER CONTENT
@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <header className="App-header">
-          <h1>Welcome to HB- Gaming Reviews</h1>
+          <h1>Welcome to HB- Gaming Reviews ♟️</h1>
         </header>
         <NavBar />
         <h3>Keep us updated with your gaming thoughts ;)</h3>

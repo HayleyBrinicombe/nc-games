@@ -1,10 +1,10 @@
 .App {
   text-align: center;
-  border-style: outset;
+  border-style: groove;
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 1rem;
-   margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .App-header {
@@ -167,10 +167,17 @@ p {
   border: 3px solid rgb(132, 66, 66);
   text-decoration: double;
 }
-.user_review{
+.user_review {
   border-radius: 6px;
   border-bottom: #0486aa;
   border: 6px solid rgb(184, 119, 119);
-  
 }
 
+.button1 {
+  border-radius: 8px;
+}
+.votes-num {
+  font-size: 100%;
+  font-weight: bolder;
+  color: rgb(121, 43, 43);
+}
