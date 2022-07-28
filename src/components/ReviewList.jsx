@@ -5,10 +5,12 @@ import { useParams } from "react-router-dom";
 
 export default function ReviewList() {
   const [reviews, setReviews] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const { category } = useParams();
 
   useEffect(() => {
+    setIsLoading(true);
     axios
       .get(`https://hb-games.herokuapp.com/api/reviews`, {
         params: {
@@ -16,9 +18,11 @@ export default function ReviewList() {
         }
       })
       .then((res) => {
+        setIsLoading(false);
         setReviews(res.data.reviews);
       });
   }, [category]);
+  
 
   return (
     <div>
@@ -28,3 +32,4 @@ export default function ReviewList() {
     </div>
   );
 }
+
