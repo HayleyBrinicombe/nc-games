@@ -4,6 +4,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import Votes from "./Votes";
 import Comments from "./Comments";
+import CommentForm from "./CommentForm";
 
 
 
@@ -55,6 +56,8 @@ export default function GetSingleReview() {
       </div>
       <h4 className="user_review2"> comments {SingleReview.comment_count} </h4>
       <Comments review_id={review_id}  />
+      <CommentForm review_id={review_id} />
+      <br></br>
     </div>
   );
 }
