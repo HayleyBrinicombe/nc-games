@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getComments } from "./utils/api";
+import { getComments } from "../utils/api";
 
 const Comments = ({ review_id }) => {
   const [commentsList, setCommentsList] = useState([]);

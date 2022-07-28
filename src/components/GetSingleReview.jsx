@@ -3,7 +3,7 @@ import axios from "axios";
 
 import { useParams } from "react-router-dom";
 import Votes from "./Votes";
-import Comments from "../Comments";
+import Comments from "./Comments";
 
 
 
