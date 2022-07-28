@@ -9,7 +9,9 @@
 
 ul {
   list-style: none;
-  padding: 0%;
+  padding: 5%;
+  color: #15404d;
+  background-color: #c7c4c4;
 }
 
 .App-header {
@@ -161,10 +163,11 @@ p {
   text-align: center;
   text-decoration-color: #c7c4c4;
 }
-.div {
-  color: grey;
+div {
+  color:#362228
 }
-.body {
+
+body {
   color: grey;
 }
 .review-border {
@@ -192,9 +195,26 @@ p {
 }
 .user_review2 {
   border-radius: 1px;
-  border: 3px solid rgb(125, 84, 84);
-
+border-top: #362228;
+border-style: dotted;
+border-width:1px ;
+background-color: antiquewhite;
 }
-.comment{
-  border-bottom: 1px solid coral;
+div.comment{
+  color: rgb(86, 24, 24);
+  background-color: bisque;
+  border-style: double;
+
+  
+}
+form {
+  border-width: 10px;
+  box-sizing: content-box;
+  font-size: large;
+  color:#a52100
+  brown
+}
+submit-button{
+  color:rgb(255, 168, 127)
+  
 }

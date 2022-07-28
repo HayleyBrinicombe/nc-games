@@ -26,7 +26,7 @@ function App() {
       <BrowserRouter>
         <div className="App">
           <header className="App-header">
-            <h1>Welcome to HB- Gaming Reviews ♟️</h1>
+            <h1>Welcome to HB- Gaming Reviews ♟️ 🎲</h1>
           </header>
           <NavBar />
           <h3>Keep us updated with your gaming thoughts ;)</h3>

@@ -17,21 +17,28 @@ export default function CommentForm({ review_id }) {
   }
 
   return (
-    <form
+    
+    <form class="form"
+    
       onSubmit={(e) => {
         handleSubmit(e);
       }}
     >
-      <label>
+      <br></br>
+      <label className="forrm">
+        <br></br>
         Add a comment:
-        <input
+        <br></br>
+        <input class="form"
           required
           type="text"
           value={comment}
           onChange={(e) => setComment(e.target.value)}
         />
-      </label>
-      <button disabled={disabled} type="sunbmit">submit</button>
+      </label >
+      
+      <button class="submit-button" disabled={disabled} type="submit">submit</button>
+      
     </form>
   );
 }

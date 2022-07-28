@@ -2,6 +2,8 @@ import { useContext, useEffect, useState } from "react";
 import { UserContext } from "../contexts/UserContext";
 import { getComments } from "../utils/api";
 
+
+
 const Comments = ({ review_id }) => {
   const [commentsList, setCommentsList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -22,20 +24,20 @@ const Comments = ({ review_id }) => {
   if (isLoading) return <p>Loading...</p>;
 
   return commentsList.length !== 0 ? (
-    <div>
+    <div class="comment">
       {commentsList.map((comment) => {
         return (
-          <div key={comment.comment_id}>
-            <h5>User: {comment.author}</h5>
-            <h6>created: {comment.created_at}</h6>
-            <h6>Votes: {comment.votes}</h6>
-            <h6>{comment.body}</h6>
-          </div>
+          <p key={comment.comment_id}>
+            {comment.body}
+            <text> by </text>
+            <b>{comment.author}</b> <text> </text>
+           
+          </p>
         );
       })}
     </div>
   ) : (
-    <p>SorryNo comments</p>
+    <p>No comments</p>
   );
 };
 
