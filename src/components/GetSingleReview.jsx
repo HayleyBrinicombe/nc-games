@@ -53,12 +53,8 @@ export default function GetSingleReview() {
       <div className="votes-num">
         Like ths review? If so, then please vote for it!
       </div>
-      <h4>{SingleReview.comment_count} Comments</h4>
-      <Comments review_id={review_id}/>
+      <h4 className="user_review2"> comments {SingleReview.comment_count} </h4>
+      <Comments review_id={review_id}  />
     </div>
-
-
-    
-    
   );
 }

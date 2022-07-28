@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 export default function ReviewCard({ review }) {
   return (
     <div className="review-border" src={review} alt="review-border">
-      <h3>{review.title}</h3>
-      <p>{review.review_body}</p>
+      <h2>{review.title}</h2>
+      <h3>{review.review_body}</h3>
 
       <img
         className="reviewcard_img"
