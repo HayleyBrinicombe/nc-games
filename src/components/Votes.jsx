@@ -10,7 +10,6 @@ export default function Votes({ SingleReview, setSingleReview }) {
   const [hasUpVoted, setHasUpVoted] = useState(false);
   const [hasDownVoted, setHasDownVoted] = useState(false);
   const [voteNumber, setVoteNumber] = useState(SingleReview.votes);
-  
 
   function updateVotes(vote) {
     return axios
@@ -52,7 +51,6 @@ export default function Votes({ SingleReview, setSingleReview }) {
           <p>👍</p>
         )}
       </button>
-      <br></br>
       <button className="button1" onClick={handleDownClick}>
         {hasDownVoted ? (
           <p className="votes-num">Thank you for voting</p>
@@ -60,10 +58,9 @@ export default function Votes({ SingleReview, setSingleReview }) {
           <p>👎 </p>
         )}
       </button>
+
       <br></br>
-      <br></br>
-      <br></br>
-      {isError && <p >Vote not registered, please try again</p>}
+      {isError && <p>Vote not registered, please try again</p>}
     </section>
   );
 }

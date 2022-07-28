@@ -3,10 +3,14 @@ import axios from "axios";
 
 import { useParams } from "react-router-dom";
 import Votes from "./Votes";
+import Comments from "../Comments";
+
+
 
 export default function GetSingleReview() {
   const [SingleReview, setSingleReview] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  
 
   const { review_id } = useParams();
 
@@ -40,9 +44,7 @@ export default function GetSingleReview() {
         src={SingleReview.review_img_url}
         alt="review_img"
       ></img>
-      <h4>{SingleReview.review_body}</h4>
-      <h4>{SingleReview.comment_count} Comments</h4>
-
+      <h3>{SingleReview.review_body}</h3>
       <Votes
         review_id={review_id}
         SingleReview={SingleReview}
@@ -51,6 +53,12 @@ export default function GetSingleReview() {
       <div className="votes-num">
         Like ths review? If so, then please vote for it!
       </div>
+      <h4>{SingleReview.comment_count} Comments</h4>
+      <Comments review_id={review_id}/>
     </div>
+
+
+    
+    
   );
 }
