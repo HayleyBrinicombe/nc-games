@@ -32,11 +32,9 @@ function App() {
       <BrowserRouter>
         <div className="App">
           <header className="App-header">
-            <h1>Welcome to HB- Gaming Reviews ♟️ 🎲</h1>
+            <h1> Welcome to HB-Gaming Reviews ♟️ </h1>
           </header>
           <NavBar />
-
-        
 
           <br></br>
           <br></br>
@@ -48,7 +46,6 @@ function App() {
             <Route path="/" element={<ReviewList query={query} />} />
             <Route path="/reviews/:category" element={<ReviewList />} />
             <Route path="/review/:review_id" element={<GetSingleReview />} />
-            
           </Routes>
         </div>
       </BrowserRouter>

@@ -25,13 +25,17 @@ const Comments = ({ review_id }) => {
     <div className="comment">
       {commentsList.map((comment) => {
         return (
-          <p key={comment.comment_id}>
-            {comment.body}
-            <text> by </text>
-            <b>{comment.author}</b> posted on <text> </text>
-            {comment.created_at.toString().slice(0, 10)},
-            {comment.created_at.toString().slice(11, 19)}
-          </p>
+          <div key={comment.comment_id}>
+            <p>
+              {`${comment.body} by `}
+              <b>{comment.author}</b>
+            </p>
+            <p>
+              {`posted on ${comment.created_at
+                .toString()
+                .slice(0, 10)}, ${comment.created_at.toString().slice(11, 19)}`}
+            </p>
+          </div>
         );
       })}
     </div>

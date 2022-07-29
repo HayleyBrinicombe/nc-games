@@ -5,7 +5,7 @@ export default function NavBar() {
     <div className="topnav" id="myTopnav">
       <div>
         <Link to="/" className="navigation_link">
-          All Reviews
+         Home
         </Link>
         <Link to="/reviews/strategy" className="navigation_link">
           Strategy Reviews

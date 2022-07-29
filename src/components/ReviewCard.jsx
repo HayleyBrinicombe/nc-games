@@ -19,7 +19,7 @@ export default function ReviewCard({ review }) {
       <h5>comments:{review.comment_count}</h5>
       <h5>votes:{review.votes}</h5>
       <h5>{review.category}</h5>
-      <button>
+      <button className="review-card-button">
         <Link to={`/review/${review.review_id}`} className="navigation_link">
           Read more
         </Link>

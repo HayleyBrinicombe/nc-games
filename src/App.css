@@ -6,6 +6,10 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+a {
+  text-decoration: none;
+  color: #6c292d;
+}
 
 ul {
   list-style: none;
@@ -228,4 +232,7 @@ submit-button{
 .dropdown{
   width: 30%;
   
+}
+.review-card-button {
+  margin-bottom: 30px;
 }
