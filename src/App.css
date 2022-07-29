@@ -25,7 +25,7 @@ ul {
 }
 
 .App-link {
-  color: #4d9cb2;
+  color: #8f1c22;
 }
 
 /* Add a black background color to the top navigation */
@@ -204,17 +204,28 @@ div.comment{
   color: rgb(86, 24, 24);
   background-color: bisque;
   border-style: double;
+  
 
   
 }
-form {
-  border-width: 10px;
-  box-sizing: content-box;
-  font-size: large;
-  color:#a52100
-  brown
+.form {
+  border-width: 3px;
+  line-height: 70px;
+  color: rgb(68, 42, 42);
+  text-align: center;
+  
+  width: 99%;
+ 
+
+  
+
+  
 }
 submit-button{
   color:rgb(255, 168, 127)
+  
+}
+.dropdown{
+  width: 30%;
   
 }

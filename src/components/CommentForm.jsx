@@ -12,33 +12,34 @@ export default function CommentForm({ review_id }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    setDisabled(true)
-    postComment(review_id, user.username, comment)
+    setDisabled(true);
+    postComment(review_id, user.username, comment);
   }
 
   return (
-    
-    <form class="form"
-    
+    <form
+      className="form"
       onSubmit={(e) => {
         handleSubmit(e);
       }}
     >
       <br></br>
-      <label className="forrm">
+      <label className="form">
         <br></br>
         Add a comment:
         <br></br>
-        <input class="form"
+        <input
+          className="form"
           required
           type="text"
           value={comment}
           onChange={(e) => setComment(e.target.value)}
         />
-      </label >
-      
-      <button class="submit-button" disabled={disabled} type="submit">submit</button>
-      
+      </label>
+
+      <button className="submit-button" disabled={disabled} type="submit">
+        submit
+      </button>
     </form>
   );
 }
