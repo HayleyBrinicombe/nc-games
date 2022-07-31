@@ -1,4 +1,4 @@
-# HB Gaming Reviews - Sample Games Review Website
+# HB Gaming Reviews - Sample Board Games Review Website
 
 A live version of this repo is hosted here: https://hb-gaming.netlify.app/ 
 
@@ -42,7 +42,7 @@ $ npm start
 ```
 ## Future addition plans
 
--   Add user admin and log in page improve to improve the user story
+-   Add user admin funtionailiy to moderate submissions
 -   Improve voting functionality to be more flexible (allow for votes to be retracted)
 -   Enhance the voting experience incorporating voting on comments
 -   Additional filters (e.g. filter reviews by username)
