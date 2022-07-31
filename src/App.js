@@ -10,15 +10,20 @@ import ReviewList from "./components/ReviewList";
 import NavBar from "./components/NavBar";
 
 import GetSingleReview from "./components/GetSingleReview";
-import SortBy from "./components/SortBy";
+// import SortBy from "./components/SortBy";
 
 //USER CONTENT
 
 function App() {
-  const [query, setQuery] = useState({
+  // const [query, setQuery] = useState({
+  //   SortBy: "created_at",
+  //   order: "desc",
+
+  // });
+  const [query] = useState({
     SortBy: "created_at",
-    order: "desc",
-    
+    // order: "desc",
+
   });
   const [user, setUser] = useState({
     username: "tickle122",

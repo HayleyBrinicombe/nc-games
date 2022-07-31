@@ -5,7 +5,7 @@ import { getComments } from "../utils/api";
 const Comments = ({ review_id }) => {
   const [commentsList, setCommentsList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const { user } = useContext(UserContext);
+  // const { user } = useContext(UserContext);
   useEffect(() => {
     getComments(review_id)
       .then((data) => {
