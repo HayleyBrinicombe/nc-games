@@ -8,7 +8,6 @@ A minimalistic game reviews application built with the following technologies:
 
 -   [React](https://facebook.github.io/react/)
 -   [Node.js](https://nodejs.org/en/)
--   [React Bootstrap](https://react-bootstrap.github.io/)
 -   [ExpressJS](https://expressjs.com/)
 -   [PostgreSQL](https://www.postgresql.org/)
 
