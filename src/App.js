@@ -35,18 +35,16 @@ function App() {
   return (
     <UserContext.Provider value={{ user, setUser }}>
       <BrowserRouter>
-        <div className="App">
+        <div className="top-nav">
           <header className="App-header">
             <h1> Welcome to HB-Gaming Reviews ♟️ </h1>
           </header>
           <NavBar />
-
-          <br></br>
-          <br></br>
-          <h2>Keep us updated with your gaming thoughts 😁 </h2>
-
-          <br></br>
-
+          <div>
+            <h2 className="h2">
+              Keep us updated with your gaming thoughts 😁
+            </h2>
+          </div>
           <Routes>
             <Route path="/" element={<ReviewList query={query} />} />
             <Route path="/reviews/:category" element={<ReviewList />} />

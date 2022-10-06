@@ -26,12 +26,8 @@ const Comments = ({ review_id }) => {
       {commentsList.map((comment) => {
         return (
           <div key={comment.comment_id}>
-            <p>
-              {`${comment.body} by `}
-              <b>{comment.author}</b>
-            </p>
-            <p>
-              {`posted on ${comment.created_at
+            <p>{`${comment.body} by ${comment.author}`}</p>
+            <p>{`posted on ${comment.created_at
                 .toString()
                 .slice(0, 10)}, ${comment.created_at.toString().slice(11, 19)}`}
             </p>

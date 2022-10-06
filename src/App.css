@@ -1,238 +1,176 @@
-.App {
-  text-align: center;
-  border-style: groove;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-a {
-  text-decoration: none;
-  color: #6c292d;
-}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap");
 
-ul {
-  list-style: none;
-  padding: 5%;
-  color: #15404d;
-  background-color: #c7c4c4;
+* {
+  text-align: center;
+  font-family: "Quicksand";
+  color: rgb(96, 96, 96);
+  padding: 7px;
+  position: relative;
 }
 
 .App-header {
-  background-color: #c7c4c4;
-  min-height: 10vh;
-  display: flex;
-
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(40, 34, 34);
+  text-align: center;
+  background-color: #f1356d;
+  padding: 20px;
+  
 }
 
-.App-link {
-  color: #8f1c22;
+.navigation_link {
+  margin: auto;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  background-color: #f1356d;
+
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: rgb(159, 72, 72);
-  overflow: hidden;
+.nav-bar{
+  text-decoration: none;
+  width: fit-content;
+  background-color: gainsboro;
+  padding-bottom: 20px;
+  padding: auto;
+  margin: auto;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
+.nav-bar a:hover {
+  color: #f1356d;
+  margin: auto;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
   text-align: center;
-  padding: 14px 16px;
+  padding: 5px;
   text-decoration: none;
-  font-size: 17px;
 }
-
-/* Add an active class to highlight the current page */
-.active {
-  background-color: #0486aa;
-  color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-}
-
-/* Dropdown container - needed to position the dropdown content */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Style the dropdown button to fit inside the topnav */
-.dropdown .dropbtn {
-  font-size: 17px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-/* Style the dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: static;
-  background-color: #d7cfcf;
-  min-width: 60px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-
-  max-width: 60px;
-}
-
-/* Style the links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: rgb(142, 110, 110);
-  padding: 12px 16px;
+.links{
   text-decoration: none;
-  display: block;
-  text-align: left;
+  padding: auto;
+}
+.link-home {
+  text-decoration: none;
+  padding: auto;
+  color: #f1356d;
+
+
+}
+.user-info{
+  background-color:#f1356d;
+  width: fit-content;
+  border-radius: 50px;
+  margin: auto;
+  
+}
+.h2 {
+  font-size: medium;
+  border-radius: 5px;
+  width: fit-content;
+  margin: auto;
+  padding-top: 10px;
+}
+.review-card {
+  background-color: gainsboro;
+  font-size: small;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.title {
+  font-size: small;
+  background-color: #f1356d;
+  border-radius: 30px;
+  border-color: #f1356d;
+  width: fit-content;
+  margin: auto;
 }
 
-/* Add a dark background on topnav links and the dropdown button on hover */
-.topnav a:hover,
-.dropdown:hover .dropbtn {
-  background-color: rgb(147, 70, 70);
-  color: white;
-}
-
-/* Add a grey background to dropdown links on hover */
-.dropdown-content {
-  background-color: #ddd;
-  color: rgb(156, 66, 66);
-}
-
-/* Show the dropdown menu when the user moves the mouse over the dropdown button */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 60px) {
-  .topnav.responsive {
-    position: relative;
-  }
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 1;
-    top: 1;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown {
-    float: none;
-  }
-  .topnav.responsive .dropdown-content {
-    position: relative;
-  }
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-}
-
-h3 {
-  color: rgb(40, 46, 49);
-}
 
 .reviewcard_img {
   height: 140px;
   width: 140px;
-  border-radius: 50%;
+  padding-top: 40px;
+ 
+  
+}
+.review-card-button {
+  text-decoration: none;
+  color: #f1356d;
+  margin: auto;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
 }
 
 p {
-  color: rgb(41, 59, 66);
-  font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-
+  
+  font-family: "Quicksand";
   text-align: center;
-  text-decoration-color: #c7c4c4;
-}
-div {
-  color:#362228
+  
+  
 }
 
-body {
-  color: grey;
-}
 .review-border {
-  border-radius: 10px;
-  border: 3px solid rgb(132, 66, 66);
-  text-decoration: double;
+  border-radius: 20px;
+  padding: 20px;
+  border: 3px solid #f1356d;
+  padding-bottom: 20px;
+  
 }
 .user_review {
-  border-radius: 6px;
-  border-bottom: #0486aa;
-  border: 6px solid rgb(184, 119, 119);
+  border-radius: 26px;
+  border: 5px solid #f1356d;
+  background-color: gainsboro;
+  width: fit-content;
+  margin: auto;
+  padding-bottom: 30px;
+
+  
+  
+}
+.review-body {
+  background-color: gainsboro;
+  border-radius: 26px;
+  width: fit-content;
+  padding-top: 30px;
 }
 
 .button1 {
   border-radius: 8px;
 }
 .votes-num {
-  font-size: 100%;
   font-weight: bolder;
-  color: rgb(121, 43, 43);
+  color: #f1356d;
+  margin: auto;
+  text-align: center;
 }
 .comment_font {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-.user_review2 {
-  border-radius: 1px;
-border-top: #362228;
-border-style: dotted;
-border-width:1px ;
-background-color: antiquewhite;
-}
-div.comment{
-  color: rgb(86, 24, 24);
-  background-color: bisque;
-  border-style: double;
-  
-
-  
-}
-.form {
-  border-width: 3px;
-  line-height: 70px;
-  color: rgb(68, 42, 42);
+  font-family: "Quicksand";
   text-align: center;
-  
-  width: 99%;
- 
+  font-size: small;
 
-  
-
-  
 }
-submit-button{
-  color:rgb(255, 168, 127)
-  
+.comment {
+  border-radius: 40px;
 }
-.dropdown{
+.num-votes{
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+  font-size: medium;
+}
+.votes-card p{
+  background-color: #f1356d;
+  margin: auto;
+}
+submit-button {
+  width: fit-content;
+}
+.dropdown {
   width: 30%;
-  
 }
-.review-card-button {
-  margin-bottom: 30px;
+
+.comment {
+background-color: gainsboro;
+width: fit-content;
+margin: auto;
 }

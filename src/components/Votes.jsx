@@ -42,7 +42,7 @@ export default function Votes({ SingleReview, setSingleReview }) {
 
   return (
     <section className="votesCard">
-      <p className="votes-num">Votes: {voteNumber}</p>
+      <p className="num-votes">Votes: {voteNumber}</p>
 
       <button className="button1" onClick={handleUpClick}>
         {hasUpVoted ? (

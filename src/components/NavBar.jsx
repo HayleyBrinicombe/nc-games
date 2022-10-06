@@ -2,31 +2,31 @@ import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
-    <div className="topnav" id="myTopnav">
+    <div className="nav-bar">
       <div>
-        <Link to="/" className="navigation_link">
+        <Link className="link-home" to="/">
          Home
         </Link>
-        <Link to="/reviews/strategy" className="navigation_link">
-          Strategy Reviews
+        <Link className="links" to="/reviews/strategy">
+          Strategy
         </Link>
-        <Link to="/reviews/hidden-roles" className="navigation_link">
-          Hidden Roles Reviews
+        <Link className="links" to="/reviews/hidden-roles">
+          Hidden Roles
         </Link>
-        <Link to="/reviews/dexterity" className="navigation_link">
-          Dexterity Reviews
+        <Link className="links" to="/reviews/dexterity">
+          Dexterity
         </Link>
-        <Link to="/reviews/push-your-luck" className="navigation_link">
-          Push your luck Reviews
+        <Link className="links" to="/reviews/push-your-luck">
+          Push your luck
         </Link>
-        <Link to="/reviews/roll-and-write" className="navigation_link">
-          Roll and write Reviews
+        <Link className="links" to="/reviews/roll-and-write">
+          Roll and write
         </Link>
-        <Link to="/reviews/deck-building" className="navigation_link">
-          Deck building Reviews
+        <Link className="links" to="/reviews/deck-building">
+          Deck building
         </Link>
-        <Link to="/reviews/engine-building" className="navigation_link">
-          Engine building Reviews
+        <Link className="links" to="/reviews/engine-building">
+          Engine building
         </Link>
       </div>
     </div>

@@ -36,28 +36,29 @@ export default function GetSingleReview() {
   )
 
   return (
-    <div>
-      <h2 className="user_review">{SingleReview.owner}</h2>
-      <h3>{SingleReview.title}</h3>
-
+    <div className="single-review">
+      <div className="user-info">
+        <h1>{SingleReview.owner}</h1>
+        <h2>{SingleReview.title}</h2>
+      </div>
       <img
         className="reviewcard_img"
         src={SingleReview.review_img_url}
         alt="review_img"
       ></img>
-      <h3>{SingleReview.review_body}</h3>
+      <div>
+      <h4 className="review-body">{SingleReview.review_body}</h4>
       <Votes
         review_id={review_id}
         SingleReview={SingleReview}
         setSingleReview={setSingleReview}
-      ></Votes>
+      ></Votes></div>
       <div className="votes-num">
         Like ths review? If so, then please vote for it!
       </div>
       <h4 className="user_review2"> comments {SingleReview.comment_count} </h4>
-      <Comments review_id={review_id}  />
+      <Comments review_id={review_id} />
       <CommentForm review_id={review_id} />
-      <br></br>
     </div>
   );
 }

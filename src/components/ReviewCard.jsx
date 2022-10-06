@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 
 export default function ReviewCard({ review }) {
   return (
-    <div className="review-border" src={review} alt="review-border">
-      <h2>{review.title}</h2>
+    <div className="review-card" src={review} alt="review-border">
+      <div className="title">
+        <h2>{review.title}</h2>
+      </div>
       <h3>
         posted on {review.created_at.toString().slice(0, 10)}, at{" "}
         {review.created_at.toString().slice(11, 19)}
@@ -20,7 +22,7 @@ export default function ReviewCard({ review }) {
       <h5>votes:{review.votes}</h5>
       <h5>{review.category}</h5>
       <button className="review-card-button">
-        <Link to={`/review/${review.review_id}`} className="navigation_link">
+        <Link to={`/review/${review.review_id}`}>
           Read more
         </Link>
       </button>
